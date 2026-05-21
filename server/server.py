@@ -6,13 +6,10 @@ HOST = "0.0.0.0"
 PORT = 9090
 
 DEPARTMENTS = {
-    1: "Computer Science",
-    2: "Electrical & Electronics Engineering",
-    3: "Civil Engineering",
-    4: "Mechanical Engineering",
-    5: "Information & Communication Technology",
-    6: "Environmental Engineering",
-    7: "Architecture",
+    1: "Computer Engineering",
+    2: "Computer Science",
+    3: "Information Systems",
+    4: "Information Technology",
 }
 
 DATABASE = [
@@ -20,22 +17,22 @@ DATABASE = [
     {"dept_no": 1, "first_name": "Alice", "last_name": "Umutoni", "phone": "+250 782 345 678", "email": "alice.umutoni@ur.ac.rw"},
     {"dept_no": 1, "first_name": "Pierre", "last_name": "Niyonsaba", "phone": "+250 783 456 789", "email": "pierre.niyonsaba@ur.ac.rw"},
     {"dept_no": 1, "first_name": "Marie", "last_name": "Gakwaya", "phone": "+250 784 567 890", "email": "marie.gakwaya@ur.ac.rw"},
-    {"dept_no": 2, "first_name": "Patrick", "last_name": "Habimana", "phone": "+250 785 678 901", "email": "patrick.habimana@ur.ac.rw"},
+    {"dept_no": 1, "first_name": "Patrick", "last_name": "Habimana", "phone": "+250 785 678 901", "email": "patrick.habimana@ur.ac.rw"},
     {"dept_no": 2, "first_name": "Diane", "last_name": "Uwimana", "phone": "+250 786 789 012", "email": "diane.uwimana@ur.ac.rw"},
     {"dept_no": 2, "first_name": "Eric", "last_name": "Nkurunziza", "phone": "+250 787 890 123", "email": "eric.nkurunziza@ur.ac.rw"},
-    {"dept_no": 3, "first_name": "Grace", "last_name": "Mukamana", "phone": "+250 788 901 234", "email": "grace.mukamana@ur.ac.rw"},
-    {"dept_no": 3, "first_name": "Paul", "last_name": "Bizimana", "phone": "+250 789 012 345", "email": "paul.bizimana@ur.ac.rw"},
-    {"dept_no": 3, "first_name": "Solange", "last_name": "Nyiramana", "phone": "+250 780 123 456", "email": "solange.nyiramana@ur.ac.rw"},
-    {"dept_no": 4, "first_name": "Robert", "last_name": "Nsanzimana", "phone": "+250 781 234 901", "email": "robert.nsanzimana@ur.ac.rw"},
-    {"dept_no": 4, "first_name": "Yvonne", "last_name": "Ingabire", "phone": "+250 782 345 012", "email": "yvonne.ingabire@ur.ac.rw"},
-    {"dept_no": 5, "first_name": "Claude", "last_name": "Hakizimana", "phone": "+250 783 456 123", "email": "claude.hakizimana@ur.ac.rw"},
-    {"dept_no": 5, "first_name": "Celine", "last_name": "Uwitonze", "phone": "+250 784 567 234", "email": "celine.uwitonze@ur.ac.rw"},
-    {"dept_no": 5, "first_name": "Joseph", "last_name": "Ndayambaje", "phone": "+250 785 678 345", "email": "joseph.ndayambaje@ur.ac.rw"},
-    {"dept_no": 6, "first_name": "Anita", "last_name": "Mukashyaka", "phone": "+250 786 789 456", "email": "anita.mukashyaka@ur.ac.rw"},
-    {"dept_no": 6, "first_name": "Denis", "last_name": "Rutaganda", "phone": "+250 787 890 567", "email": "denis.rutaganda@ur.ac.rw"},
-    {"dept_no": 7, "first_name": "Judith", "last_name": "Nyirahabimana", "phone": "+250 788 901 678", "email": "judith.nyirahabimana@ur.ac.rw"},
-    {"dept_no": 7, "first_name": "Samuel", "last_name": "Gasana", "phone": "+250 789 012 789", "email": "samuel.gasana@ur.ac.rw"},
-    {"dept_no": 7, "first_name": "Leonie", "last_name": "Uwera", "phone": "+250 780 123 890", "email": "leonie.uwera@ur.ac.rw"},
+    {"dept_no": 2, "first_name": "Grace", "last_name": "Mukamana", "phone": "+250 788 901 234", "email": "grace.mukamana@ur.ac.rw"},
+    {"dept_no": 2, "first_name": "Paul", "last_name": "Bizimana", "phone": "+250 789 012 345", "email": "paul.bizimana@ur.ac.rw"},
+    {"dept_no": 2, "first_name": "Solange", "last_name": "Nyiramana", "phone": "+250 780 123 456", "email": "solange.nyiramana@ur.ac.rw"},
+    {"dept_no": 3, "first_name": "Robert", "last_name": "Nsanzimana", "phone": "+250 781 234 901", "email": "robert.nsanzimana@ur.ac.rw"},
+    {"dept_no": 3, "first_name": "Yvonne", "last_name": "Ingabire", "phone": "+250 782 345 012", "email": "yvonne.ingabire@ur.ac.rw"},
+    {"dept_no": 3, "first_name": "Claude", "last_name": "Hakizimana", "phone": "+250 783 456 123", "email": "claude.hakizimana@ur.ac.rw"},
+    {"dept_no": 3, "first_name": "Celine", "last_name": "Uwitonze", "phone": "+250 784 567 234", "email": "celine.uwitonze@ur.ac.rw"},
+    {"dept_no": 3, "first_name": "Joseph", "last_name": "Ndayambaje", "phone": "+250 785 678 345", "email": "joseph.ndayambaje@ur.ac.rw"},
+    {"dept_no": 4, "first_name": "Anita", "last_name": "Mukashyaka", "phone": "+250 786 789 456", "email": "anita.mukashyaka@ur.ac.rw"},
+    {"dept_no": 4, "first_name": "Denis", "last_name": "Rutaganda", "phone": "+250 787 890 567", "email": "denis.rutaganda@ur.ac.rw"},
+    {"dept_no": 4, "first_name": "Judith", "last_name": "Nyirahabimana", "phone": "+250 788 901 678", "email": "judith.nyirahabimana@ur.ac.rw"},
+    {"dept_no": 4, "first_name": "Samuel", "last_name": "Gasana", "phone": "+250 789 012 789", "email": "samuel.gasana@ur.ac.rw"},
+    {"dept_no": 4, "first_name": "Leonie", "last_name": "Uwera", "phone": "+250 780 123 890", "email": "leonie.uwera@ur.ac.rw"},
 ]
 
 
@@ -168,13 +165,10 @@ ACTION: list_by_dept
 ─────────────────────────────────────────────────────────────────
 AVAILABLE DEPARTMENTS
 ─────────────────────────────────────────────────────────────────
-  1 — Computer Science
-  2 — Electrical & Electronics Engineering
-  3 — Civil Engineering
-  4 — Mechanical Engineering
-  5 — Information & Communication Technology
-  6 — Environmental Engineering
-  7 — Architecture
+  1 — Computer Engineering
+  2 — Computer Science
+  3 — Information Systems
+  4 — Information Technology
 
 ─────────────────────────────────────────────────────────────────
 ERROR SHAPES

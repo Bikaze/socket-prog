@@ -5,13 +5,10 @@ SERVER_HOST = "127.0.0.1"
 SERVER_PORT = 9090
 
 DEPARTMENTS = {
-    1: "Computer Science",
-    2: "Electrical & Electronics Engineering",
-    3: "Civil Engineering",
-    4: "Mechanical Engineering",
-    5: "Information & Communication Technology",
-    6: "Environmental Engineering",
-    7: "Architecture",
+    1: "Computer Engineering",
+    2: "Computer Science",
+    3: "Information Systems",
+    4: "Information Technology",
 }
 
 MENU = """
@@ -37,7 +34,7 @@ def send_request(sock, payload: dict) -> str:
     while True:
         chunk = sock.recv(4096)
         if not chunk:
-            break
+            raise ConnectionResetError("Server closed the connection unexpectedly.")
         response += chunk
         if b"<<END>>" in response:
             break
@@ -136,10 +133,12 @@ def main():
     print(f"\n  Connecting to {SERVER_HOST}:{SERVER_PORT} ...")
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+            sock.settimeout(5)
             sock.connect((SERVER_HOST, SERVER_PORT))
+            sock.settimeout(None)
             print("  Connected.\n")
             run_menu(sock)
-    except ConnectionRefusedError:
+    except (ConnectionRefusedError, OSError):
         print(f"  [!] Could not connect to server at {SERVER_HOST}:{SERVER_PORT}.")
         print("      Make sure server/server.py is running first.\n")
 
